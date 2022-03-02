@@ -37,7 +37,7 @@
                             <div class="flex-grow-1">
                                 <p class="text-muted fw-medium">Montant à Payer</p>
                                 <h4 class="mb-0"> CFA
-                                    <?= number_format($FicheDebiteur['montant_debiteurs'], 2, ',', ' '); ?>
+                                    <?= number_format($FicheDebiteur['montant_debiteurs'], 0, ',', ' '); ?>
                                 </h4>
                             </div>
 
@@ -58,7 +58,8 @@
                         <div class="d-flex">
                             <div class="flex-grow-1">
                                 <p class="text-muted fw-medium">Montant Payé</p>
-                                <h4 class="mb-0">CFA <?= $FicheDebiteur['MontantTotal']; ?></h4>
+                                <h4 class="mb-0">CFA <?= number_format($FicheDebiteur['MontantTotal'], 0, ',', ' '); ?>
+                                </h4>
                             </div>
 
                             <div class="flex-shrink-0 align-self-center">
@@ -79,7 +80,8 @@
                             <div class="flex-grow-1">
                                 <p class="text-muted fw-medium">Montant Restant</p>
                                 <h4 class="mb-0">CFA
-                                    <?= $FicheDebiteur['montant_debiteurs'] - $FicheDebiteur['MontantTotal']; ?></h4>
+                                    <?= number_format($FicheDebiteur['montant_debiteurs'] - $FicheDebiteur['MontantTotal'], 0, ',', ' '); ?>
+                                </h4>
                             </div>
                             <div class="flex-shrink-0 align-self-center">
                                 <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
