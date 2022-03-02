@@ -8,7 +8,7 @@ class UsersManagerPDO extends UsersManager
 
     public function login($login, $Password)
     {
-        $requete = $this->dao->prepare("SELECT *  FROM users INNER JOIN statut ON statut.id_statut=users.id_statut WHERE login=:login");
+        $requete = $this->dao->prepare("SELECT *  FROM users INNER JOIN tblestatus ON tblestatus.refstatus=users.status WHERE login=:login");
         $requete->bindValue(':login', $login, \PDO::PARAM_STR);
         $requete->execute();
         $resultat = $requete->fetch();
