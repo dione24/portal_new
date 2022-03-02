@@ -116,7 +116,7 @@
                                 </td>
                                 <td>
                                     <h6 class="font-weight-normal mb-0">
-                                        <?= number_format($FicheDebiteur['montant_paiement'], 0, ',', ' '); ?></h6>
+                                        <?= number_format($value['montant_paiement'], 0, ',', ' '); ?></h6>
                                 </td>
                                 <td>
                                     <h6 class="font-weight-normal mb-0">
