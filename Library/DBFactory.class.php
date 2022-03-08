@@ -6,13 +6,13 @@ class DBFactory
 {
 	public static function MySQLPDO()
 	{
-		$db = new \PDO('mysql:host=localhost;dbname=mcr;charset=utf8', 'root', 'root');
+		$db = new \PDO('mysql:host=localhost;dbname=cp1146011p43_mcr;charset=utf8', 'cp1146011p43_mcr', 'Diblo@cisco2019');
 		$db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
 		return $db;
 	}
 	public static function MySQLMySQLi()
 	{
-		return new \MySQLi('localhost', 'root', 'root', 'mcr');
+		return new \MySQLi('localhost', 'cp1146011p43_mcr', 'Diblo@cisco2019', 'cp1146011p43_mcr');
 	}
 }
