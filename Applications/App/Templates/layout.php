@@ -55,7 +55,12 @@
                                     <i class="bx bx-home-circle me-2"></i><span key="t-dashboards">Accueil</span>
                                 </a>
                             </li>
-
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="/paiement" id="topnav-dashboard"
+                                    role="button">
+                                    <i class="bx bx-money"></i><span key="t-dashboards">Paiement</span>
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle arrow-none" href="/logout" id="topnav-dashboard"
                                     role="button">
@@ -67,7 +72,6 @@
                 </nav>
             </div>
         </div>
-
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
