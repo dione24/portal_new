@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <routes>
     <route url="/home" module="Afficher" action="home"/>
+    <route url="/paiement" module="Paiement" action="index"/>
+    <route url="/paiement/cinet" module="Paiement" action="cinet"/>
+
     <route url="/logout" module="Connexion" action="logout"/>
     <route url="/Profile" module="Connexion" action ="Profile"/>
     <route url="/CheckPassword" module="Connexion" action="CheckPassword"/>
