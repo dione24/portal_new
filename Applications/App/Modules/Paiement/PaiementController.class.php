@@ -12,8 +12,8 @@ class PaiementController extends \Library\BackController
     }
     public function executeCinet(\Library\HTTPRequest $request)
     {
-        error_reporting(E_ALL);
-        ini_set('display_errors', 1);
+        // error_reporting(E_ALL);
+        // ini_set('display_errors', 1);
         try {
             //transaction id
             $id_transaction = date("YmdHis");
@@ -34,7 +34,7 @@ class PaiementController extends \Library\BackController
             $site_id = "124598";
 
             //platform ,  utiliser PROD si vous avez créé votre compte sur www.cinetpay.com  ou TEST si vous avez créé votre compte sur www.sandbox.cinetpay.com
-            $plateform = "TEST";
+            $plateform = "PROD";
 
             //la version ,  utilisé V1 si vous voulez utiliser la version 1 de l'api
             $version = "V2";
@@ -42,11 +42,11 @@ class PaiementController extends \Library\BackController
             // nom du formulaire CinetPay
             $formName = "goCinetPay";
             // notify url
-            $notify_url = 'www.mydomaine.ci/notify/';
+            $notify_url = 'https://portal.malicreances-sa.com/';
             // return url
-            $return_url = 'www.mydomaine.ci/return/';
+            $return_url = 'https://portal.malicreances-sa.com/';
             // cancel url
-            $cancel_url = 'www.mydomaine.ci';
+            $cancel_url = 'https://portal.malicreances-sa.com/';
             // cinetpay button type, must be 1, 2, 3, 4 or 5
             $btnType = 2;
             // button size, can be 'small' , 'large' or 'larger'
