@@ -66,7 +66,7 @@
 
                         <p>© <script>
                             document.write(new Date().getFullYear())
-                            </script> Portal MALI CREANCES. Developed <i class="mdi mdi-heart text-danger"></i> by
+                            </script> Portal MALI CREANCES. Develop <i class="mdi mdi-heart text-danger"></i> by
                             NIANGALY
                         </p>
                     </div>
