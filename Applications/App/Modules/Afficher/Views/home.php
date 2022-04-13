@@ -67,7 +67,7 @@
                     <div class="card-body">
                         <div class="d-flex">
                             <div class="flex-grow-1">
-                                <p class="text-muted fw-medium">Montant à Payer</p>
+                                <p class="text-muted fw-medium">Montant Principal</p>
                                 <h4 class="mb-0"> CFA
                                     <?= number_format($FicheDebiteur['montant_debiteurs'], 0, ',', ' '); ?>
                                 </h4>
