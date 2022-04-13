@@ -10,7 +10,7 @@
                         </div>
                     </div>
                     <div class="col-5 align-self-end">
-                        <img src="assets/images/profile-img.png" alt="" class="img-fluid">
+                        <img src="/images/mlc.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
