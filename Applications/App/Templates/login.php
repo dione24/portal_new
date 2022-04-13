@@ -8,7 +8,7 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" href="/images/mlc.ico">
 
     <!-- Bootstrap Css -->
     <link href="/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
                                 <div class="col-5 align-self-end">
-                                    <img src="/images/profile-img.png" alt="" class="img-fluid">
+                                    <img src="/images/mlc.png" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
