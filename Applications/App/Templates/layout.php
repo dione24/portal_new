@@ -92,7 +92,8 @@
                         <div class="col-sm-6">
                             <script>
                             document.write(new Date().getFullYear())
-                            </script> © Portal MALI CREANCES
+                            </script> © Portal MALI CREANCES SA. | Tous droits réservés. |20-29-79-60
+                            contact@malicreances-sa.com
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
