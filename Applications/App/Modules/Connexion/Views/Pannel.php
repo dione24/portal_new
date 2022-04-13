@@ -14,7 +14,6 @@
                             <th>Nom</th>
                             <th>Prenom</th>
                             <th>Statut</th>
-                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,10 +23,6 @@
                             <td><?= $value['nom']; ?></td>
                             <td><?= $value['prenom']; ?></td>
                             <td><?= $value['name_status']; ?></td>
-                            <td> <a href="/editUsers/<?= $value['id']; ?>" class="btn btn-warning"><i
-                                        class="fa fa-minus"></i>
-                                    Edit</a> <a href="/deleteUsers/<?= $value['id']; ?>" class="btn btn-danger"><i
-                                        class="fa fa-minus"></i> Del</a></td>
                         </tr>
                         <?php } ?>
 
