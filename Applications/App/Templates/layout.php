@@ -66,10 +66,18 @@
                                     <i class="bx bx-money"></i><span key="t-dashboards">Paiement</span>
                                 </a>
                             </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-dashboard"
+                                    role="button">
+                                    <i class="bx bx-mail-send"></i><span
+                                        key="t-dashboards">contact@malicreances-sa.com</span>
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle arrow-none" href="/logout" id="topnav-dashboard"
                                     role="button">
-                                    <i class="bx bx-sign-out"></i><span key="t-dashboards">Déconnexion</span>
+                                    <i class="bx bx-log-out-circle"></i><span key="t-dashboards">Déconnexion</span>
                                 </a>
                             </li>
                         </ul>
