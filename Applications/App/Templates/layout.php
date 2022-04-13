@@ -66,14 +66,6 @@
                                     <i class="bx bx-money"></i><span key="t-dashboards">Paiement</span>
                                 </a>
                             </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-dashboard"
-                                    role="button">
-                                    <i class="bx bx-mail-send"></i><span
-                                        key="t-dashboards">contact@malicreances-sa.com</span>
-                                </a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle arrow-none" href="/logout" id="topnav-dashboard"
                                     role="button">
