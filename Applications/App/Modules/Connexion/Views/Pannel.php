@@ -1,25 +1,13 @@
 <div class="row">
-    <div class="col-lg-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>Liste des Clients</h5>
-                <div class="ibox-tools">
-                    <a class="collapse-link">
-                        <i class="fa fa-chevron-up"></i>
-                    </a>
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-wrench"></i>
-                    </a>
+    <div class="col-12">
 
-                    <a class="close-link">
-                        <i class="fa fa-times"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="ibox-content">
-                <button class="btn btn-success" data-toggle="modal" data-target="#addUsers"><i class="fa fa-plus"></i>
-                    Add</button><br /><br />
-                <table class="table table-striped table-bordered " id="dataTable">
+        <div class="card">
+
+            <div class="card-body">
+                <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal"
+                    data-bs-target="#myModal">Standard modal</button>
+                <br /><br />
+                <table id="datatable" class="table table-bordered dt-responsive  nowrap w-100">
                     <thead>
                         <tr>
                             <th>login</th>
@@ -31,92 +19,79 @@
                     </thead>
                     <tbody>
                         <?php foreach ($ListeUsers as $key => $value) { ?>
-                            <tr>
-                                <td><?= $value['login']; ?></td>
-                                <td><?= $value['Nom']; ?></td>
-                                <td><?= $value['Prenom']; ?></td>
-                                <td><?= $value['name_statut']; ?></td>
-                                <td> <a href="/editUsers/<?= $value['id']; ?>" class="btn btn-warning"><i class="fa fa-minus"></i>
-                                        Edit</a> <a href="/deleteUsers/<?= $value['id']; ?>" class="btn btn-danger"><i class="fa fa-minus"></i> Del</a></td>
-                            </tr>
+                        <tr>
+                            <td><?= $value['login']; ?></td>
+                            <td><?= $value['nom']; ?></td>
+                            <td><?= $value['prenom']; ?></td>
+                            <td><?= $value['name_status']; ?></td>
+                            <td> <a href="/editUsers/<?= $value['id']; ?>" class="btn btn-warning"><i
+                                        class="fa fa-minus"></i>
+                                    Edit</a> <a href="/deleteUsers/<?= $value['id']; ?>" class="btn btn-danger"><i
+                                        class="fa fa-minus"></i> Del</a></td>
+                        </tr>
                         <?php } ?>
 
                     </tbody>
                 </table>
+
             </div>
         </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div> <!-- end col -->
+</div> <!-- end row -->
 <!---modalAddUsers--->
-<div class="modal fade" id="addUsers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" action="/addUsers">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Ajouter un Utlisateur</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="login">Login </label>
-                        <input type="text" class="form-control" name="login">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Add Debiteur</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/addUsers">
+                    <div class="row mb-4">
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Login </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="horizontal-firstname-input" name="login"
+                                required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="nom">Nom</label>
-                        <input type="text" class="form-control" name="Nom">
+                    <div class="row mb-4">
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Nom </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="horizontal-firstname-input" name="nom" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="prenom">Prenom</label>
-                        <input type="text" class="form-control" name="Prenom">
+                    <div class="row mb-4">
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Prenom </label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="horizontal-firstname-input" name="prenom"
+                                required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email">
+                    <div class="row mb-4">
+                        <label for="horizontal-email-input" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="horizontal-email-input" name="email">
+                        </div>
                     </div>
+                    <div class="row mb-4">
+                        <label for="horizontal-password-input" class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="horizontal-password-input" name="password"
+                                required>
+                        </div>
+                        <input type="hidden" class="form-control" value="7" name="id_status" required>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-sm-9">
+                            <div>
+                                <button type="submit" class="btn btn-primary w-md">Valider</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-                    <div class="form-group">
-                        <label for="Statut">Statut</label>
-                        <select class="form-control" name="id_statut">
-                            <?php foreach ($Statut as $key => $value) { ?>
-                                <option value="<?= $value['id_statut']; ?>"><?= $value['name_statut']; ?> </option>
-                            <?php   } ?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Mot de Passe</label>
-                        <input type="password" class="form-control" name="password">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-            </form>
-        </div>
-    </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
 </div>
