@@ -20,7 +20,7 @@ class UsersManagerPDO extends UsersManager
 
     public function getListeOf()
     {
-        $requete = $this->dao->prepare("SELECT * FROM users INNER JOIN tblestatus ON tblestatus.refstatus=users.status ");
+        $requete = $this->dao->prepare("SELECT * FROM users INNER JOIN tblestatus ON tblestatus.refstatus=users.status WHERE  tblestatus.refstatus=7");
         $requete->execute();
         $Users = $requete->fetchAll();
         return $Users;
@@ -47,7 +47,7 @@ class UsersManagerPDO extends UsersManager
     public function AddUsers()
     {
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-        $requete = $this->dao->prepare("INSERT INTO users (nom,prenom,login,password,status,email_users) VALUES (:nom,:prenom,:login,:password,:status,:email_users)");
+        $requete = $this->dao->prepare("INSERT INTO users (nom,prenom,login,password,status,email_users) VALUES (:nom,:prenom,:login,:password,:status,:email)");
         $requete->bindValue(':nom', $_POST['nom'], \PDO::PARAM_STR);
         $requete->bindValue(':prenom', $_POST['prenom'], \PDO::PARAM_STR);
         $requete->bindValue(':login', $_POST['login'], \PDO::PARAM_STR);

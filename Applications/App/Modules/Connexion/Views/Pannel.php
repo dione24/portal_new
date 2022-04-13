@@ -5,7 +5,7 @@
 
             <div class="card-body">
                 <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal"
-                    data-bs-target="#myModal">Standard modal</button>
+                    data-bs-target="#myModal">Ajouter</button>
                 <br /><br />
                 <table id="datatable" class="table table-bordered dt-responsive  nowrap w-100">
                     <thead>
