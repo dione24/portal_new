@@ -17,7 +17,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title mb-6">Chart</h4>
+                <h4 class="card-title mb-6">Chart du Recouvrement</h4>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="mt-6 mt-sm-0">
