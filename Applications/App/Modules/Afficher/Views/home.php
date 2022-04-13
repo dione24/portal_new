@@ -97,7 +97,7 @@
                             <div class="flex-shrink-0 align-self-center">
                                 <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
                                     <span class="avatar-title rounded-circle bg-primary">
-                                        <i class="bx bx-archive-in font-size-24"></i>
+                                        <i class="bx bx-trending-up font-size-24"></i>
                                     </span>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                             <div class="flex-shrink-0 align-self-center">
                                 <div class="avatar-sm rounded-circle bg-primary mini-stat-icon">
                                     <span class="avatar-title rounded-circle bg-primary">
-                                        <i class="bx bx-purchase-tag-alt font-size-24"></i>
+                                        <i class="bx bx-arrow-back font-size-24"></i>
                                     </span>
                                 </div>
                             </div>
