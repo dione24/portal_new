@@ -13,16 +13,15 @@ class ConnexionController extends \Library\BackController
             $User = $this->managers->getManagerOf('Users')->login($request->postData('login'), $request->postData('password'));
             if (!empty($User)) {
                 $this->app()->user()->setAuthenticated();
-                $_SESSION['id'] = $User['id_users'];
+                $_SESSION['RefDeb'] = $User['RefDeb'];
                 $_SESSION['login'] = $User['login'];
                 $_SESSION['Nom'] = $User['nom'];
                 $_SESSION['Prenom'] = $User['prenom'];
-                $_SESSION['statut'] = $User['name_status'];
+                $_SESSION['deb'] = $User['id_debiteurs'];
                 $this->app()->httpResponse()->redirect('/home');
             }
         }
     }
-
 
     public function executePannel(\Library\HTTPRequest $request)
     {
