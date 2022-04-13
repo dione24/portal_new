@@ -109,7 +109,7 @@
                         </thead>
                         <tbody>
                             <?php foreach ($paiementDebiteur as $key => $value) { ?>
-                            <tr>>
+                            <tr>
                                 <td>
                                     <h6 class="font-weight-normal mb-0">
                                         <?= number_format($value['montant_paiement'], 0, ',', ' '); ?></h6>
