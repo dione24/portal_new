@@ -50,7 +50,7 @@
                                 <a href="/" class="auth-logo-dark">
                                     <div class="avatar-md profile-user-wid mb-6">
                                         <span class="avatar-title rounded-circle bg-light">
-                                            <img src="/images/mlc.png" alt="" class="rounded-circle" height="90">
+                                            <img src="/images/mlc.png" alt="" class="rounded-circle" height="50">
                                         </span>
                                     </div>
                                 </a>
@@ -65,8 +65,9 @@
 
                         <p>© <script>
                             document.write(new Date().getFullYear())
-                            </script> Portal MALI CREANCES. Develop <i class="mdi mdi-heart text-danger"></i> by
-                            NIANGALY
+                            </script> Portal MALI CREANCES SA. | Tous droits réservés. <i
+                                class="mdi mdi-heart text-danger"></i> by
+                            NIANGALY Abdoulaye
                         </p>
                     </div>
                 </div>
