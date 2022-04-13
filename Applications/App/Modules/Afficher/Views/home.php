@@ -103,17 +103,13 @@
                     <table class="table align-middle table-nowrap mb-0">
                         <thead class="table-light">
                             <tr>
-                                <th class="align-middle">#</th>
                                 <th class="align-middle">Montant</th>
                                 <th class="align-middle">Date</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($paiementDebiteur as $key => $value) { ?>
-                            <tr>
-                                <td>
-                                    <h6 class="font-weight-normal mb-0"><?= $value['montant_paiement']; ?></h6>
-                                </td>
+                            <tr>>
                                 <td>
                                     <h6 class="font-weight-normal mb-0">
                                         <?= number_format($value['montant_paiement'], 0, ',', ' '); ?></h6>

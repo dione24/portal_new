@@ -1,133 +1,92 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr-fr">
 
 <head>
-
     <meta charset="utf-8" />
-    <title>Portal MALI CREANCES | <?= $titles; ?></title>
+    <title><?= $titles; ?> | Portal </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <!-- owl.carousel css -->
-    <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
 
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
 </head>
 
-<body class="auth-body-bg">
-
-    <div>
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-
-                <div class="col-xl-9">
-                    <div class="auth-full-bg pt-lg-5 p-4">
-                        <div class="w-100">
-                            <div class="bg-overlay"></div>
-                            <div class="d-flex h-100 flex-column">
-
-                                <div class="p-4 mt-auto">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-7">
-                                            <div class="text-center">
-
-                                                <h4 class="mb-3"><i
-                                                        class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"></i><span
-                                                        class="text-primary">500 </span>+ Clients satisfaits</h4>
-
-                                                <div dir="ltr">
-                                                    <div class="owl-carousel owl-theme auth-review-carousel"
-                                                        id="auth-review-carousel">
-                                                        <div class="item">
-                                                            <div class="py-3">
-                                                                <p class="font-size-16 mb-4">" Fantastic theme with a
-                                                                    ton of options. If you just want the HTML to
-                                                                    integrate with your project, then this is the
-                                                                    package. You can find the files in the 'dist'
-                                                                    folder...no need to install git and all the other
-                                                                    stuff the documentation talks about. "</p>
-
-                                                                <div>
-                                                                    <h4 class="font-size-16 text-primary">Abs1981</h4>
-                                                                    <p class="font-size-14 mb-0">- Skote User</p>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="item">
-                                                            <div class="py-3">
-                                                                <p class="font-size-16 mb-4">" If Every Vendor on Envato
-                                                                    are as supportive as Themesbrand, Development with
-                                                                    be a nice experience. You guys are Wonderful. Keep
-                                                                    us the good work. "</p>
-
-                                                                <div>
-                                                                    <h4 class="font-size-16 text-primary">nezerious</h4>
-                                                                    <p class="font-size-14 mb-0">- Skote User</p>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+<body>
+    <div class="account-pages my-5 pt-sm-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5">
+                    <div class="card overflow-hidden">
+                        <div class="bg-primary bg-soft">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="text-primary p-4">
+                                        <h5 class="text-primary">Bienvenue!</h5>
+                                        <p>Connectez-vous.</p>
                                     </div>
+                                </div>
+                                <div class="col-5 align-self-end">
+                                    <img src="/images/profile-img.png" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="auth-full-page-content p-md-5 p-4">
-                        <div class="w-100">
-                            <div class="d-flex flex-column h-100">
-                                <div class="mb-4 mb-md-5">
-                                    <a href="index.html" class="d-block auth-logo">
-                                        <img src="/images/logo-dark.png" alt="" height="18" class="auth-logo-dark">
-                                        <img src="/images/logo-light.png" alt="" height="18" class="auth-logo-light">
-                                    </a>
-                                </div>
-                                <div class="my-auto">
-                                    <div>
-                                        <h5 class="text-primary">Bienvenue !</h5>
-                                        <p class="text-muted">Connectez-vous pour continuer à Portal.</p>
+                        <div class="card-body pt-0">
+                            <div class="auth-logo">
+                                <a href="/" class="auth-logo-light">
+                                    <div class="avatar-md profile-user-wid mb-6">
+                                        <span class="avatar-title rounded-circle bg-light">
+                                            <img src="/images/mlc.png" alt="" class="rounded-circle" height="34">
+                                        </span>
                                     </div>
+                                </a>
 
-                                    <?= $content; ?>
-                                </div>
-                                <div class="mt-4 mt-md-5 text-center">
-                                    <p class="mb-0">© <script>
-                                        document.write(new Date().getFullYear())
-                                        </script> PORTAL | MALI CREANCES SA . Develop by NIANGALY ABDOULAYE</p>
-                                </div>
+                                <a href="/" class="auth-logo-dark">
+                                    <div class="avatar-md profile-user-wid mb-6">
+                                        <span class="avatar-title rounded-circle bg-light">
+                                            <img src="/images/mlc.png" alt="" class="rounded-circle" height="90">
+                                        </span>
+                                    </div>
+                                </a>
                             </div>
+                            <div class="p-2">
+                                <?= $content; ?>
+                            </div>
+
                         </div>
                     </div>
+                    <div class="mt-5 text-center">
+
+                        <p>© <script>
+                            document.write(new Date().getFullYear())
+                            </script> Portal MALI CREANCES. Developed <i class="mdi mdi-heart text-danger"></i> by
+                            NIANGALY
+                        </p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <script src="/assets/libs/jquery/jquery.min.js"></script>
-    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="/assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="/assets/libs/node-waves/waves.min.js"></script>
-    <script src="/assets/libs/owl.carousel/owl.carousel.min.js"></script>
-    <script src="/assets/js/pages/auth-2-carousel.init.js"></script>
-    <script src="/assets/js/app.js"></script>
+    </div>
+    <!-- end account-pages -->
+
+    <!-- JAVASCRIPT -->
+    <script src="/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/libs/metismenu/metisMenu.min.js"></script>
+    <script src="/libs/simplebar/simplebar.min.js"></script>
+    <script src="/libs/node-waves/waves.min.js"></script>
+
+    <!-- App js -->
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
