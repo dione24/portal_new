@@ -28,7 +28,8 @@
                                     </div>
                                     <div class="row mt-4">
                                         <div class="col-sm-6">
-                                            <button type="submit" class="btn btn-success" id="bt_get_signature">
+                                            <button type="submit" disabled class="btn btn-success"
+                                                id="bt_get_signature">
                                                 <i class="mdi mdi-arrow-right me-1"></i> Payer</button>
                                         </div> <!-- end col -->
                                     </div>

@@ -27,7 +27,7 @@
                             var myChart = new Chart(ctx, {
                                 type: 'pie',
                                 data: {
-                                    labels: ['Montant Recouvré', 'Montant Principal '],
+                                    labels: ['Montant Payé', 'Montant Principal '],
                                     datasets: [{
                                         label: '# Paiement',
                                         data: [<?= $FicheDebiteur['MontantTotal']; ?>,
