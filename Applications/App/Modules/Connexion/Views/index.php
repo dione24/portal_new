@@ -6,7 +6,7 @@
              </div>
 
              <div class="mb-3">
-                 <label class="form-label">Password</label>
+                 <label class="form-label">Mot de Passe</label>
                  <div class="input-group auth-pass-inputgroup">
                      <input type="password" class="form-control" name="password" placeholder="Entrez votre mot de passe"
                          aria-label="Password" aria-describedby="password-addon">
