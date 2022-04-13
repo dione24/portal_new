@@ -17,10 +17,10 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title mb-4">Chart</h4>
+                <h4 class="card-title mb-6">Chart</h4>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="mt-4 mt-sm-0">
+                    <div class="col-md-6">
+                        <div class="mt-6 mt-sm-0">
                             <canvas id="myChart" width="20" height="1"></canvas>
                             <script>
                             var ctx = document.getElementById('myChart');
