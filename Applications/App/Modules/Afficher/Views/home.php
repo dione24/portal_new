@@ -21,7 +21,39 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="mt-4 mt-sm-0">
-                            <div id="radialBar-chart" class="apex-charts"></div>
+                            <canvas id="myChart" width="20" height="1"></canvas>
+                            <script>
+                            var ctx = document.getElementById('myChart');
+                            var myChart = new Chart(ctx, {
+                                type: 'pie',
+                                data: {
+                                    labels: ['Montant Recouvré', 'Montant Principal '],
+                                    datasets: [{
+                                        label: '# Paiement',
+                                        data: [<?= $FicheDebiteur['MontantTotal']; ?>,
+                                            <?= $FicheDebiteur['montant_debiteurs']; ?>
+                                        ],
+                                        backgroundColor: [
+                                            'rgba(255, 99, 132, 0.2)',
+                                            'rgba(54, 162, 235, 0.2)'
+                                        ],
+                                        borderColor: [
+                                            'rgba(255, 99, 132, 1)',
+                                            'rgba(54, 162, 235, 1)'
+                                        ],
+                                        borderWidth: 1,
+                                        hoverOffset: 4
+                                    }]
+                                },
+                                options: {
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    }
+                                }
+                            });
+                            </script>
                         </div>
                     </div>
                 </div>
